@@ -1,0 +1,59 @@
+/* Default styles for light mode */
+.messages-container {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Dark mode overrides */
+  body.dark .messages-container {
+    background-color: black;  /* Background turns black in dark mode */
+    color: white;  /* Text remains white in dark mode */
+  }
+  
+  body.dark .message-item h3,
+  body.dark .message-item p {
+    color: white;  /* Ensure text inside the message items remains white in dark mode */
+  }
+  
+  body.light .message-item h3,
+  body.light .message-item p {
+    color: black; /* Text stays black in light mode */
+  }
+  
+  /* Additional styling to ensure text remains readable in both modes */
+  .message-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+  }
+  
+  .message-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  
+  .message-item p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  /* Optional: Styling for buttons */
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
